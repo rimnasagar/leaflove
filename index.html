@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/97c06e64ae.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,300&family=Lobster&family=Mynerve&family=Pacifico&family=Roboto:ital,wght@0,300;1,300&family=Satisfy&family=Tilt+Prism&family=Vollkorn:ital,wght@1,600&display=swap');
+
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    .nav1 {
+      font-family: 'Lobster', cursive;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    .i1 {
+
+      width: 235px;
+      height: 250px;
+    }
+
+    .i2 {
+      width: 550px;
+      height: 400px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .main,
+    .sidebar {
+      border: 3px solid rgb(53, 85, 61);
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.753);
+    }
+
+    .main {
+      margin-top:20px;
+      padding-top: 38px;
+      
+      width: 60%;
+      height: 400vh;
+    }
+
+    .sidebar {
+      margin-top:20px;
+      padding-top:15px;
+      padding-left: 10px;
+      width: 35%;
+      height: 400vh;
+    }
+    .section2{
+      margin-top:20px;
+      padding-top: 38px;
+
+    }
+    /* .row{
+      margin-left: 20px;
+    } */
+    .si1{
+      
+      width:85%;
+      height:56vh;
+    }
+    [type="radio"]:checked+label:after {
+  background-color: red;
+  border: 2px solid red;
+  
+}
+    body {
+      background-color: #ccc;
+      font-family: sans-serif;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-image: url(./images/bg2.webp); background-repeat: no-repeat; background-size: cover; background: transparent;">
+  <nav class=" navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/Leaf Love-1.png" alt="" style="width:340px;height:190px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <h3 class="nav1"> <a class="nav-link active" aria-current="page" href="#">Indoor Plants</a></h3>
+          </li>
+          <li class="nav-item">
+            <h3 class="nav1"><a class="nav-link" href="#">Gifts</a></h3>
+          </li>
+          <li class="nav-item">
+            <h3 class="nav1"><a class="nav-link" href="#">Pots & Accessories</a></h3>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <h3 class="nav1"> <i> The Leafy Home</i></h3>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <div class="section1">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <!-- <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./images/bg1.webp" class="d-block w-100" alt="..." style="width: 2135px; height:469px;">
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h5>First slide label</h5> -->
+            <a href="" class="hero-button"></a>
+            <!-- <h3 style="padding: -10%;"><p>Indoor Plants for Home and Office</p></h3> -->
+          </div>
+        </div>
+        <!-- <div class="carousel-item" data-bs-interval="2000">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div> -->
+        <!-- <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div> -->
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button> -->
+      <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="main">
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          <img src="./images/b-1.webp" alt="">
+          <h3 class="nav1">Raphis Palm-XL</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 2499/-</h3>
+        </div>
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          
+          
+          <h3 class="nav1" style="text-align:start; text-decoration: underline;">
+            Description
+          </h3>
+          <h3><p class="nav1">
+            Lady Palm is a great indoor house plant with fan-like fronds that are shiny and glossy green.          </p></h3>
+          <h3 class="nav1" >
+            What makes it special
+          </h3>
+          <h3><ul><li class="nav1">NASA recommended air purifier.</li>
+          <li class="nav1">Best plant for partial sunlight condition.</li>
+          <li class="nav1">Low maintenance plant.</li></ul></h3>
+          <button type="button" class="btn btn-success">Shop Now</button>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          <img src="./images/b-2.webp" alt="">
+          <h3 class="nav1">Wandering Jew With Hanging Pot</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 999/-</h3>
+        </div>
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          
+          
+          <h3 class="nav1" style="text-align:start; text-decoration: underline;">
+            Description
+          </h3>
+          <h3><p class="nav1">
+            Wandering jew plants have green, heart-shaped leaves with purple stripes and a silvery sheen to them. Depending on the variety, the leaves can be solid or variegated. Blooms are small with three petals and can be violet or white.
+            
+          </p></h3>
+          <h3 class="nav1" >
+            What makes it special
+          </h3>
+          <h3><ul><li class="nav1">Fast growth and attractive foliage.</li>
+          <li class="nav1">Wandering Jews flourish in bright but indirect sunlight.</li>
+          <li class="nav1">Low maintenance plant.</li></ul></h3>
+          <button type="button" class="btn btn-success">Shop Now</button>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          <img src="./images/b-2.webp" alt="">
+          <h3 class="nav1">Wandering Jew With Hanging Pot</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 999/-</h3>
+        </div>
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          
+          
+          <h3 class="nav1" style="text-align:start; text-decoration: underline;">
+            Description
+          </h3>
+          <h3><p class="nav1">
+            Wandering jew plants have green, heart-shaped leaves with purple stripes and a silvery sheen to them. Depending on the variety, the leaves can be solid or variegated. Blooms are small with three petals and can be violet or white.
+            
+          </p></h3>
+          <h3 class="nav1" >
+            What makes it special
+          </h3>
+          <h3><ul><li class="nav1">Fast growth and attractive foliage.</li>
+          <li class="nav1">Wandering Jews flourish in bright but indirect sunlight.</li>
+          <li class="nav1">Low maintenance plant.</li></ul></h3>
+          <button type="button" class="btn btn-success">Shop Now</button>
+        </div>
+
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          <img src="./images/b-2.webp" alt="">
+          <h3 class="nav1">Wandering Jew With Hanging Pot</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 999/-</h3>
+        </div>
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          
+          
+          <h3 class="nav1" style="text-align:start; text-decoration: underline;">
+            Description
+          </h3>
+          <h3><p class="nav1">
+            Wandering jew plants have green, heart-shaped leaves with purple stripes and a silvery sheen to them. Depending on the variety, the leaves can be solid or variegated. Blooms are small with three petals and can be violet or white.
+            
+          </p></h3>
+          <h3 class="nav1" >
+            What makes it special
+          </h3>
+          <h3><ul><li class="nav1">Fast growth and attractive foliage.</li>
+          <li class="nav1">Wandering Jews flourish in bright but indirect sunlight.</li>
+          <li class="nav1">Low maintenance plant.</li></ul></h3>
+          <button type="button" class="btn btn-success">Shop Now</button>
+        </div>
+
+      </div>
+      <hr>
+      
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          <img src="./images/b-2.webp" alt="">
+          <h3 class="nav1">Wandering Jew With Hanging Pot</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 999/-</h3>
+        </div>
+        <div class="col-lg-6 col-md-12 col=sm-12">
+          
+          
+          <h3 class="nav1" style="text-align:start; text-decoration: underline;">
+            Description
+          </h3>
+          <h3><p class="nav1">
+            Wandering jew plants have green, heart-shaped leaves with purple stripes and a silvery sheen to them. Depending on the variety, the leaves can be solid or variegated. Blooms are small with three petals and can be violet or white.
+            
+          </p></h3>
+          <h3 class="nav1" >
+            What makes it special
+          </h3>
+          <h3><ul><li class="nav1">Fast growth and attractive foliage.</li>
+          <li class="nav1">Wandering Jews flourish in bright but indirect sunlight.</li>
+          <li class="nav1">Low maintenance plant.</li></ul></h3>
+          <button type="button" class="btn btn-success">Shop Now</button>
+        </div>
+
+      </div>
+      
+
+    </div>
+    <div class="sidebar">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+      
+      <img class="si1" src="./images/p-1.webp" alt="">
+      <h3 class="nav1">Self -Watering Planter </h3>
+      <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <h3 class="nav1">Rs 399/-</h3>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+    <h3 class="nav1">Select Color</h3>
+    <form action="#">
+      <p>
+        <input name="group1" type="radio" id="test1" />
+        <label for="test1">Red</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test2" />
+        <label for="test2">Yellow</label>
+      </p>
+      <p>
+        <input class="with-gap" name="group1" type="radio" id="test3"  />
+        <label for="test3">Green</label>
+      </p>
+        <p>
+          <input name="group1" type="radio" id="test4" disabled="" />
+          <label for="test4">Brown</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test5" disabled="" />
+        <label for="test5">All 5</label>
+    </p>
+    <button type="button" class="btn btn-success">Shop Now</button>
+    </form>
+  </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-sm-12">
+    
+    <img class="si1" src="./images/p-2.webp" alt="">
+    <h3 class="nav1">Reusable Holes Seedling Tray </h3>
+    <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <h3 class="nav1">Rs 295/-</h3>
+  </div>
+  <div class="col-lg-4 col-md-12 col-sm-12">
+  <h3 class="nav1">Select Color</h3>
+  <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Green</label>
+    </p>
+      <p>
+        <input name="group1" type="radio" id="test4" disabled="" />
+        <label for="test4">Brown</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test5" disabled="" />
+      <label for="test5">All 5</label>
+  </p>
+  <button type="button" class="btn btn-success">Shop Now</button>
+  </form>
+</div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-lg-8 col-md-12 col-sm-12">
+  
+  <img class="si1" src="./images/p-3.webp" alt="">
+  <h3 class="nav1">Football Ceramic Pot</h3>
+  <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <h3 class="nav1">Rs 399/-</h3>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+<h3 class="nav1">Select Color</h3>
+<form action="#">
+  <p>
+    <input name="group1" type="radio" id="test1" />
+    <label for="test1">Red</label>
+  </p>
+  <p>
+    <input name="group1" type="radio" id="test2" />
+    <label for="test2">Yellow</label>
+  </p>
+  <p>
+    <input class="with-gap" name="group1" type="radio" id="test3"  />
+    <label for="test3">Green</label>
+  </p>
+    <p>
+      <input name="group1" type="radio" id="test4" disabled="" />
+      <label for="test4">Brown</label>
+  </p>
+  <p>
+    <input name="group1" type="radio" id="test5" disabled="" />
+    <label for="test5">All 5</label>
+</p>
+<button type="button" class="btn btn-success">Shop Now</button>
+</form>
+</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-lg-8 col-md-12 col-sm-12">
+
+<img class="si1" src="./images/p-4.webp" alt="">
+<h3 class="nav1">Pheonix Ceramic Pot</h3>
+<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <h3 class="nav1">Rs 3499/-</h3>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+<h3 class="nav1">Select Color</h3>
+<form action="#">
+<p>
+  <input name="group1" type="radio" id="test1" />
+  <label for="test1">Red</label>
+</p>
+<p>
+  <input name="group1" type="radio" id="test2" />
+  <label for="test2">Yellow</label>
+</p>
+<p>
+  <input class="with-gap" name="group1" type="radio" id="test3"  />
+  <label for="test3">Green</label>
+</p>
+  <p>
+    <input name="group1" type="radio" id="test4" disabled="" />
+    <label for="test4">Brown</label>
+</p>
+<p>
+  <input name="group1" type="radio" id="test5" disabled="" />
+  <label for="test5">All 5</label>
+</p>
+<button type="button" class="btn btn-success">Shop Now</button>
+</form>
+</div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-lg-8 col-md-12 col-sm-12">
+
+<img class="si1" src="./images/p-5.webp" alt="">
+<h3 class="nav1">Dove Plant</h3>
+<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <h3 class="nav1">Rs 1999/-</h3>
+</div>
+<div class="col-lg-4 col-md-12 col-sm-12">
+<h3 class="nav1">Select Color</h3>
+<form action="#">
+<p>
+  <input name="group1" type="radio" id="test1" />
+  <label for="test1">Red</label>
+</p>
+<p>
+  <input name="group1" type="radio" id="test2" />
+  <label for="test2">Yellow</label>
+</p>
+<p>
+  <input class="with-gap" name="group1" type="radio" id="test3"  />
+  <label for="test3">Green</label>
+</p>
+  <p>
+    <input name="group1" type="radio" id="test4" disabled="" />
+    <label for="test4">Brown</label>
+</p>
+<p>
+  <input name="group1" type="radio" id="test5" disabled="" />
+  <label for="test5">All 5</label>
+</p>
+<button type="button" class="btn btn-success">Shop Now</button>
+</form>
+</div>
+</div>
+
+  </div>
+  </div>
+  
+  <div class="section2">
+  <div class="row p-5">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <img src="./images/Copy_of_BOX-TEMPLATE_58_900x900_crop_center.webp" class="i2" alt="...">
+      <h3 class="nav1"><a style="text-decoration: none; color: black;" href="">Floor Plants</a></h3>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <img
+        src="./images/Pots-indoor-plants_900x900_crop_center_9d508603-bdd8-4623-9a36-e3bcb72b2c46_900x900_crop_center.jpg"
+        class="i2" alt="">
+      <h3 class="nav1"><a href="" style="text-decoration: none; color: black;">Pots</a></h3>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+      <img src="./images/Rare-Indoor-Plants_900x900_crop_center.webp" class="i2" alt="">
+      <h3 class="nav1"><a style="text-decoration: none ; color:black" href="">Rare Indoor Plants</a></h3>
+    </div>
+
+  </div>
+</div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4 nav1" style="font-size: large;">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ABOUT US</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Our Story</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Locate Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Locate Store</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Garden Services</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">CUSTOMER CARE</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-dark">Shipping Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Terms And Conditions</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">GET IN TOUCH</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Call Us:
+                +7654321767
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Email Us:support@leaflove.com</a>
+            </li>
+            <!-- <li>
+              <a href="#!" class="text-dark">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Link 4</a>
+            </li> -->
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Follow Us On</h5>
+  
+          <ul class="list-unstyled" style="display: flex; justify-content: space-between; ">
+            <li>
+              <a href="#!" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">leaflove.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+</body>
+
+</html>
